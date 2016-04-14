@@ -1,12 +1,11 @@
-body{
+/* HTML Element Styles */
+body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.nav-white{
-    color: white;
-}
+/* IDs */
 
-#landing{
+#landing {
     background: url("img/2.png");
     background-attachment: fixed;
     background-size: cover;
@@ -15,13 +14,7 @@ body{
     color: white;
 }
 
-.jumbotron{
-    background: transparent;
-    margin-top: 10%;
-}
-
-
-#picbg2{
+#join-bg {
     background: url("img/1.png");
     background-attachment: fixed;
     background-size: cover;
@@ -29,14 +22,36 @@ body{
     padding: 0px;
 }
 
-.navbar-default{
+#contact-form {
+    background-color: white;
+}
+
+/* Classes */
+
+/* Navbar */
+.nav-white {
+    color: white;
+}
+
+.navbar-default {
     background: transparent;
 }
 
-.container{
+.navbar a {
+    color: #fff !important; /* Really shouldn't need important */
+}
+
+.jumbotron {
+    background: transparent;
+    margin-top: 10%;
+    padding-bottom: 250px;
+}
+
+.container {
     padding:80px 120px;
 }
 
+/* Button */
 .btn {
     padding: 10px 20px;
     border: 1px solid red;
