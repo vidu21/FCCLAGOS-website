@@ -1,65 +1,193 @@
-/* HTML Element Styles */
-
-body {
+/* HTML ELEMENT STYLING */
+*{
+  box-sizing: border-box;
+}
+html {
   font-family: 'Roboto Condensed', sans-serif;
 }
+section, aside, article, nav, header, footer, main, figure{
+  display: block;
+}
 
+/* BODY */
+body{
+  background-color: #2aac2a;
+  color: #fff;
+}
+hr{
+  width: 85%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+section > figure > img {
+  margin: auto;
+}
 
 /* IDs */
-
 #landing {
-  background: url("img/2.png");
-  background-attachment: fixed;
+  background: url("img/1.png") fixed;
   background-size: cover;
   margin: 0px;
   padding: 0px;
   color: white;
 }
-
-#join-bg {
-  background: url("img/1.png");
+#members{
+  background: url("img/3.png");
   background-attachment: fixed;
   background-size: cover;
-  margin: 0px;
-  padding: 0px;
+  margin-top: 20px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
-
+#members h1 {
+  font-size: 6em;
+}
+#members p {
+  font-size: 20px;
+}
+#about{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#events{
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#join{
+  background: url("img/4.png");
+  background-attachment: fixed;
+  background-size: cover;
+  margin-top: 20px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
 #contact-form {
   background-color: white;
 }
 
-
-/* Classes */
-
-
-/* Navbar */
-
-.nav-white {
-  color: white;
+/* NAVBAR */
+@media screen and  (min-device-width: 768px){
+  .navbar{
+    border: 0px;
+  }
+  .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 5%;
 }
-
+}
+@media screen and (max-device-width: 768px)  {
+  section > article > p {
+  padding-top: 10px
+}
+  .navbar{
+    border: 0px;
+  }
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+    background-color: rgba(0,0,0,0.5);
+}
+  .greenText{
+    color: #2aac2a;
+  }
+  .pad{
+    padding-top: 20px;
+}
+  }
+.nav-items{
+    margin-right: 5%;
+  }
+}
+.navbar{
+    border: 0px;
+  }
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
 .navbar-default {
   background: transparent;
 }
-
-.navbar a {
-  color: #fff !important;
-  /* Really shouldn't need important */
+.navbar-default .navbar-brand {
+  color: #fff;
 }
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+.nav-items > li > a > em {
+  font-style: normal;
+  padding-bottom: 6px;
+  margin: 0 2.5px 0 2.5px;
+}
+.nav-items > li > a > em:hover {
+  border-bottom: 1.5px solid #e7e7e7;
+}
+
+/* NAVBAR HARMBURGER */
+.navbar-default .navbar-toggle .icon-bar {
+ background-color: #fff; 
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+.navbar-toggle .icon-bar:nth-of-type(2) {
+	  top: 1px;
+}
+.navbar-toggle .icon-bar:nth-of-type(3) {
+  	top: 2px;
+}
+.navbar-toggle .icon-bar {
+	  position: relative;
+	  transition: all 500ms ease-in-out;
+}
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+	  top: 6px;
+	  transform: rotate(45deg);
+}
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+	  background-color: transparent;
+}
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+	  top: -6px;
+	  transform: rotate(-45deg);
+}
+
+ .greenText{
+    color: green;
+  }
 
 .jumbotron {
+  margin: 10% 0 20% 0;
   background: transparent;
-  margin-top: 10%;
-  padding-bottom: 250px;
+  height: 100%;
 }
 
-.container {
-  padding: 80px 120px;
+.left{
+  text-align: left;
 }
 
+.event{
+  background-image: url(img/1.png);
+  background-size: cover;
+}
 
-/* Button */
-
+/* BUTTON */
+.cta{
+  width: 175px;
+  padding: 15px;
+  background-color: #2aac2a;
+  border-color: transparent;
+  border-radius: 30px;
+}
+.cta a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+}
 .btn {
   padding: 10px 20px;
   border: 1px solid red;
@@ -69,7 +197,6 @@ body {
   transition: .2s;
 }
 
-
 /* On hover, the color of .btn will transition to white with black text */
 
 .btn:hover,
@@ -78,14 +205,3 @@ body {
   background-color: red;
   color: white;
 }
-
-.nav-items > li > a > em {
-  font-style: normal;
-  padding-bottom: 6px;
-}
-
-.nav-items > li > a > em:hover {
-  border-bottom: 1.5px solid #e7e7e7;
-}
-
-
