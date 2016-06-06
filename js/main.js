@@ -20,7 +20,7 @@ $(document).ready(function(){
   
   $(window).load(function(e){
 		 $("#status").fadeOut("slow");
-   $("#preloader").delay(500).fadeOut("slow").remove(); 
+   $("#preloader").delay(1000).fadeOut("slow").remove(); 
 	});
   
     // Initialize Tooltip
