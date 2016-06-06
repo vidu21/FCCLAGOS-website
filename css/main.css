@@ -22,6 +22,11 @@ hr{
 section > figure > img {
   margin: auto;
 }
+footer{
+  margin-top: 30px;
+  margin-left: 35%;
+  margin-right: 35%;
+}
 
 /* IDs */
 #landing {
@@ -32,7 +37,7 @@ section > figure > img {
   color: white;
 }
 #members{
-  background: url("img/3.png");
+  background: url("img/4.png");
   background-attachment: fixed;
   background-size: cover;
   margin-top: 20px;
@@ -56,15 +61,69 @@ section > figure > img {
   padding-bottom: 80px;
 }
 #join{
-  background: url("img/4.png");
-  background-attachment: fixed;
-  background-size: cover;
   margin-top: 20px;
   padding-top: 80px;
   padding-bottom: 80px;
 }
+#joinAndFooter{
+  background: url("img/3.png");
+  background-attachment: fixed;
+  background-size: cover;
+}
 #contact-form {
   background-color: white;
+}
+
+/* CLASSES */
+.greenText{
+    color: green;
+}
+.jumbotron {
+  margin: 10% 0 20% 0;
+  background: transparent;
+  height: 100%;
+}
+.pad{
+  padding-top: 10px;
+}
+.padLR{
+  margin: 0 30px 0 30px;
+}
+.padLR a{
+  color: #fff;
+  text-decoration: none;
+}
+.padLR a:hover {
+  transition: 0.4s;
+  color: #2aac2a;
+}
+.left{
+  text-align: left;
+}
+.footer {
+  padding-bottom: 10px;
+}
+.footer a{
+  text-decoration: none;
+  color: #fff;
+}
+.event{
+  background-image: url(img/1.png);
+  background-size: cover;
+}
+.back-to-top {
+background: none;
+margin: 0 40px 40px 0;
+position: fixed;
+bottom: 0;
+right: 0;
+z-index: 100;
+display: none;
+text-decoration: none;
+color: #fff;
+}
+.back-to-top:hover {
+  color: #fff;
 }
 
 /* NAVBAR */
@@ -112,10 +171,10 @@ section > figure > img {
 .navbar-default {
   background: transparent;
 }
-.navbar-default .navbar-brand {
-  color: #fff;
-}
 .navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover {
     color: #fff;
 }
 .nav-items > li > a > em {
@@ -125,6 +184,12 @@ section > figure > img {
 }
 .nav-items > li > a > em:hover {
   border-bottom: 1.5px solid #e7e7e7;
+}
+.nav-items > li > a > em:active {
+  border-bottom: 1.5px solid #e7e7e7;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+  background-color: #2aac2a;
 }
 
 /* NAVBAR HARMBURGER */
@@ -156,25 +221,6 @@ section > figure > img {
 	  transform: rotate(-45deg);
 }
 
- .greenText{
-    color: green;
-  }
-
-.jumbotron {
-  margin: 10% 0 20% 0;
-  background: transparent;
-  height: 100%;
-}
-
-.left{
-  text-align: left;
-}
-
-.event{
-  background-image: url(img/1.png);
-  background-size: cover;
-}
-
 /* BUTTON */
 .cta{
   width: 175px;
@@ -187,21 +233,4 @@ section > figure > img {
   text-decoration: none;
   font-size: 18px;
   color: #fff;
-}
-.btn {
-  padding: 10px 20px;
-  border: 1px solid red;
-  background-color: transparent;
-  color: black;
-  border-radius: 0;
-  transition: .2s;
-}
-
-/* On hover, the color of .btn will transition to white with black text */
-
-.btn:hover,
-.btn:focus {
-  border: 1px solid red;
-  background-color: red;
-  color: white;
 }
