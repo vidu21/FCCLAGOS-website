@@ -14,8 +14,14 @@
 
 $(document).ready(function(){
   //to the top vars
-  var offset = 250;
-  var duration = 300;
+  var offset = 250, duration = 300;
+  //preloader vars
+  var preloader_main = $('#preloader'), preloader_img_holder = $('#preloader-img-holder')
+  
+  $(window).load(function(e){
+		 $("#status").fadeOut("slow");
+   $("#preloader").delay(500).fadeOut("slow").remove(); 
+	});
   
     // Initialize Tooltip
     $('[data-toggle="tooltip"]').tooltip();
